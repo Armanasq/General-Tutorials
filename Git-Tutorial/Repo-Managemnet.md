@@ -50,27 +50,55 @@ You should see a success message.
 
 ---
 
-#### **Step 3: Create a Repository**
+#### **Step 3: Create and Delete a Repository**
 
 ##### **For Personal Repositories:**
+
+###### **Create a Repository**
 1. Create a public repository:
    ```bash
-   gh repo create <repo-name> --public --confirm
+   gh repo create <repo-name> --public
    ```
 2. Create a private repository:
    ```bash
-   gh repo create <repo-name> --private --confirm
+   gh repo create <repo-name> --private
+   ```
+
+###### **Delete a Repository**
+1. Delete a repository:
+   ```bash
+   gh repo delete <owner>/<repo-name>
+   ```
+   Replace `<owner>` with your GitHub username and `<repo-name>` with the repository name.
+   
+2. If you want to skip the confirmation prompt, add the `--yes` flag:
+   ```bash
+   gh repo delete <owner>/<repo-name> --yes
    ```
 
 ##### **For Organizational Repositories:**
+
+###### **Create a Repository**
 1. Create a public repository in an organization:
    ```bash
-   gh repo create <org-name>/<repo-name> --public --confirm
+   gh repo create <org-name>/<repo-name> --public
    ```
 2. Create a private repository in an organization:
    ```bash
-   gh repo create <org-name>/<repo-name> --private --confirm
+   gh repo create <org-name>/<repo-name> --private
    ```
+
+###### **Delete a Repository**
+1. Delete a repository in an organization:
+   ```bash
+   gh repo delete <org-name>/<repo-name>
+   ```
+2. To skip the confirmation prompt, use:
+   ```bash
+   gh repo delete <org-name>/<repo-name> --yes
+   ```
+
+---
 
 #### **Verify Repository Creation:**
 1. Confirm the repository exists:
