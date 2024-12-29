@@ -310,7 +310,5 @@ You should see a success message.
 4. **No Files to Commit:**
    - Ensure files are added to the directory before running `git add .`.
 
----
 
-These detailed steps should help you manage repositories effectively on both Ubuntu and Windows. Let me know if additional scenarios need to be covered!
 
